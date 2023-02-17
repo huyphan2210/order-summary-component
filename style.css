@@ -1,4 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display');
 
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(223,232,255,255);
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+main {
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 80%;
+    max-width: 360px;
+    aspect-ratio: 1 / 1.6;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5rem 1rem 1rem rgba(201,211,248,255);
+}
+    .heroImg {
+        width: 100%;
+    }
+        .image {
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+    .order {
+        width: 80%;
+        padding: 1rem;
+        text-align: center;
+    }
+        .summary {
+            font-weight: 900;
+            color: #1a2549;
+        }
+        .description {
+            font-size: 1rem;
+            color: rgba(139,148,175,255);
+        }
+
+    .plan {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(248,249,254,255);
+        padding: 1rem;
+        align-items: center;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+        .planIcon {
+            margin-right: 1rem;
+        }
+        .detail {
+            display: flex;
+            justify-content: start;
+        }
+
+        .planDescription {
+            color: rgba(139,148,175,255);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+            .planDescription div {
+                color: #1a2549;
+                font-weight: 700;
+                margin-bottom: 0.25rem;
+            }
+        
+        .changePlan {
+            color: #4f4aab;
+            font-weight: 700;
+        }
+        .changePlan:hover {
+            cursor: pointer;
+        }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+    }
+        .proceed {
+            padding: 1rem;
+            border-radius: 1rem;
+            border-width: 0;
+            background-color: #382ae1;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0.1rem 0.75rem 1rem rgba(215,208,255,255);
+        }
+        .proceed:hover {
+            cursor: pointer;
+            background-color: rgba(56,42,225,0.75);
+        }
+        .cancel {
+            padding: 1rem;
+            background: transparent;
+            border-width: 0;
+            font-weight: bold;
+            color: rgba(139,148,175,255);
+        }
+        .cancel:hover {
+            color: #1a2549;
+            cursor: pointer;
+        }
+
+footer {
+    position: fixed;
+    bottom: 1vh;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-aspect-ratio: 1 / 1) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg)
+    }
+
+    @media screen and (max-width: 376px) {
+        .plan {
+            font-size: 0.75rem;
+        }
+            .planIcon {
+                margin-right: 0.5rem;
+            }
+    }
+}

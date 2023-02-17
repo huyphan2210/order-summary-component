@@ -8,22 +8,36 @@
   
   <title>Huy Phan | Order summary card</title>
 
-  <link ref="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
-    Order Summary
-
-    You can now listen to millions of songs, audiobooks, and podcasts on any 
-    device anywhere you like!
-  
-    Annual Plan
-    $59.99/year
-  
-    Change
-  
-    Proceed to Payment
-    Cancel Order
+    <div class="heroImg">
+      <img class="image" src="./images/illustration-hero.svg" alt="Person is dancing">
+    </div>
+    <div class="order">
+      <h2 class="summary">Order Summary</h2>
+      <p class="description">
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
+      <div class="plan">
+        <div class="detail">
+          <img class="planIcon" src="./images/icon-music.svg" alt="Music Icon">
+          <div class="planDescription">
+            <div>Annual Plan</div>
+            $59.99/year
+          </div>
+        </div>
+        <div class="changePlan">
+          <u>Change</u>
+        </div>
+      </div>
+      <div class="btn">
+        <button type="button" class="proceed">Proceed to Payment</button>
+        <button type="button" class="cancel">Cancel Order</button>
+      </div>
+    </div>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
